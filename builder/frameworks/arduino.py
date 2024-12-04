@@ -36,7 +36,7 @@ assert os.path.isdir(FRAMEWORK_DIR)
 
 env.Append(
     CPPDEFINES=[
-        ("ARDUINO", 4403), # FIXME, find how these numbers are assigned!
+        ("ARDUINO", 4403), # FIXME, find how these numbers are assigned!  <---------this would be the version num of the arduino, probably would need to read that from the board itself and assign it thus
         "PORTDUINO" # FIXME, should we use some different convention?
         # ("CONFIG_MANUFACTURER", '\\"ASR\\"'),
         # ("CONFIG_DEVICE_MODEL", '\\"6501\\"'),
